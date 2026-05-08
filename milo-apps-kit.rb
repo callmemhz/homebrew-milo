@@ -5,21 +5,21 @@
 class MiloAppsKit < Formula
   desc "milo-apps-kit CLI — single-host PaaS client"
   homepage "https://github.com/callmemhz/milo-apps-kit"
-  version "0.2.1"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/callmemhz/milo-apps-kit/releases/download/v0.2.1/milo-apps-kit_0.2.1_darwin_amd64.tar.gz"
-      sha256 "cab4ac9b78516f82fa86569329c5346d5038289e7bbf99848105b887e7ad1905"
+      url "https://github.com/callmemhz/milo-apps-kit/releases/download/v0.3.0/milo-apps-kit_0.3.0_darwin_amd64.tar.gz"
+      sha256 "80feb4734e2158ffd6f9b465592b86d1ebb2941b4d57d814c6c02dbd6d387d56"
 
       define_method(:install) do
         bin.install "milo-apps-kit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/callmemhz/milo-apps-kit/releases/download/v0.2.1/milo-apps-kit_0.2.1_darwin_arm64.tar.gz"
-      sha256 "67e6b9d289ec4e335250c74822a69be24e5cfad22b69df363317911ec5810d6f"
+      url "https://github.com/callmemhz/milo-apps-kit/releases/download/v0.3.0/milo-apps-kit_0.3.0_darwin_arm64.tar.gz"
+      sha256 "c59f8724f9e777b5a82ab1a4bac6e968225b8a0ea863f3d19997e70fac717a51"
 
       define_method(:install) do
         bin.install "milo-apps-kit"
@@ -29,15 +29,15 @@ class MiloAppsKit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/callmemhz/milo-apps-kit/releases/download/v0.2.1/milo-apps-kit_0.2.1_linux_amd64.tar.gz"
-      sha256 "6ae7f1cae4cc7456956247b905cb18fd1858a8333297b80ecd949c6d3ebecc76"
+      url "https://github.com/callmemhz/milo-apps-kit/releases/download/v0.3.0/milo-apps-kit_0.3.0_linux_amd64.tar.gz"
+      sha256 "1b214c766c2a8f4c4074910c10599e358c90fc57a3831ed8f3b4fc3fe877bcb2"
       define_method(:install) do
         bin.install "milo-apps-kit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/callmemhz/milo-apps-kit/releases/download/v0.2.1/milo-apps-kit_0.2.1_linux_arm64.tar.gz"
-      sha256 "8c255ffa03f573ec3d4bc6534576c8c41054e37d8c98cf439371a45d608366fe"
+      url "https://github.com/callmemhz/milo-apps-kit/releases/download/v0.3.0/milo-apps-kit_0.3.0_linux_arm64.tar.gz"
+      sha256 "d9348811c8a5093ece9240007e5b95cb619245fe8f5a47eb7c807860491c9b43"
       define_method(:install) do
         bin.install "milo-apps-kit"
       end
