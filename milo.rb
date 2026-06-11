@@ -5,21 +5,21 @@
 class Milo < Formula
   desc "milo CLI — single-host PaaS client"
   homepage "https://github.com/callmemhz/milo"
-  version "0.3.1"
+  version "0.4.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/callmemhz/milo/releases/download/v0.3.1/milo_0.3.1_darwin_amd64.tar.gz"
-      sha256 "40dfb35afe9de322d8e0f65a903936689abd90cbc814b0be11a623e52af49115"
+      url "https://github.com/callmemhz/milo/releases/download/v0.4.0/milo_0.4.0_darwin_amd64.tar.gz"
+      sha256 "3248c785663ee40b097b05eb54631ad38a35a9a1dd66c498b3532502513b10d8"
 
       define_method(:install) do
         bin.install "milo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/callmemhz/milo/releases/download/v0.3.1/milo_0.3.1_darwin_arm64.tar.gz"
-      sha256 "c9b1c72db5d8353286cde2dbea6d3d6bee893764aee5948cae7276e9786b7e77"
+      url "https://github.com/callmemhz/milo/releases/download/v0.4.0/milo_0.4.0_darwin_arm64.tar.gz"
+      sha256 "d7eff0dc4c7a41a1f22bfefd75c5434f049c6d959c9e14de3105d18b72be5c8e"
 
       define_method(:install) do
         bin.install "milo"
@@ -29,15 +29,15 @@ class Milo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/callmemhz/milo/releases/download/v0.3.1/milo_0.3.1_linux_amd64.tar.gz"
-      sha256 "b90f9988490b3c8d057ef97a3798478dbd762a4c57b65caa575c3a3f1f6ce954"
+      url "https://github.com/callmemhz/milo/releases/download/v0.4.0/milo_0.4.0_linux_amd64.tar.gz"
+      sha256 "57d8d98bef32ac069655cbbe70b38daa318918f22f37bc4b4ed8fae8560f40e2"
       define_method(:install) do
         bin.install "milo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/callmemhz/milo/releases/download/v0.3.1/milo_0.3.1_linux_arm64.tar.gz"
-      sha256 "4317513677a4ce3f5410dde6ab3e65037bd958ff78fb2192ec437ddeace27327"
+      url "https://github.com/callmemhz/milo/releases/download/v0.4.0/milo_0.4.0_linux_arm64.tar.gz"
+      sha256 "8094ad561745d1f5a1d81492db5bf28cf351f9da6004fd32b57ead202a8b4639"
       define_method(:install) do
         bin.install "milo"
       end
